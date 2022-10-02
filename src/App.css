@@ -7,6 +7,45 @@
   pointer-events: none;
 }
 
+.py-5{
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+.plus, .minus{
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(#fff,#f9f9f9);
+  display: inline-block;
+  border: 1px solid #c2c2c2;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 50%;
+  padding-top: 1px;
+  line-height: 1;
+}
+.textbox{
+    width: 30%;
+    font-size: 14px;
+    font-weight: 500;
+    vertical-align: middle;
+    text-align: center;
+    width: 28px;
+    height: 28px;
+    background: linear-gradient(#fff,#f9f9f9);
+    display: inline-block;
+    border: 1px solid #c2c2c2;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 2%;
+    padding-top: 1px;
+    line-height: 1;
+    margin:4px;
+}
+.img-fluid{
+  width: 200px;
+  height: 500px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
