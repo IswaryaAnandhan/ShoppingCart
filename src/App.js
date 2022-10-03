@@ -79,11 +79,11 @@ function App() {
    setCartItems([...cartItems])
   }
   return (<>
-    <header class="bg-dark py-5">
-    <div class="container px-4 px-lg-5 my-5">
-        <div class="text-center text-white">
-            <h2 class="display-4 fw-bolder">Shop Smartphones in lowest price</h2>
-            <p class="lead fw-normal text-white-50 mb-0">Branded Smartphones in best price</p>
+    <header className="bg-dark py-5">
+    <div className="container px-4 px-lg-5 my-5">
+        <div className="text-center text-white">
+            <h2 className="display-4 fw-bolder">Shop Smartphones in lowest price</h2>
+            <p className="lead fw-normal text-white-50 mb-0">Branded Smartphones in best price</p>
         </div>
     </div>
 </header>
@@ -92,9 +92,9 @@ function App() {
         <div className='col-lg-8'>
           <div className='row'>
          {
-         products.map((product)=>
+         products.map((product,index)=>
          {
-          return <Card product={product} addToCart={addToCart} cartItems={cartItems}/>
+          return <Card key={index} product={product} addToCart={addToCart} cartItems={cartItems}/>
          }) 
          }
           </div>

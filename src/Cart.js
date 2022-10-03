@@ -24,9 +24,9 @@ function Cart({removeFromCart,cartItems,setCartItems}) {
       ) : (
         <>
           <ol className="list-group list-group-numbered">
-            {cartItems.map((items) => {
+            {cartItems.map((items,index) => {
               return (
-                <li className="list-group-item d-flex justify-content-between align-items-start">
+                <li key={index} className="list-group-item d-flex justify-content-between align-items-start">
                   <div className="ms-2 me-auto">
                     <div className="fw-bold">{items.name}</div>
                     Rs.{items.Price*items.quantity}
